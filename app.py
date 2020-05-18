@@ -9,10 +9,7 @@ import os
 # You can jump directly to building your functions, and collecting HTML inputs for processing.
 
 app = Flask(__name__)
-app.config.from_object(__name__)
-app.config['DEBUG'] = True
 app.config["SECRET_KEY"] = app_functions.random_id(50)
-app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 @app.route("/", methods=["GET", "POST"])
 def login():
