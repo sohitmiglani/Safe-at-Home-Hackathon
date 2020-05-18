@@ -1,14 +1,9 @@
 # importing general extensions of flask here
 from flask import Flask, session, render_template, request, flash, url_for, redirect
-import matplotlib.pyplot as plt
 import flask
-import app_functions
 import pandas as pd
+import app_functions
 import os
-import numpy as np
-import seaborn as sns; sns.set()
-
-from sklearn.linear_model import LogisticRegression
 
 # The code for setting up a user session in flask and securing it with a secret_key is already installed below.
 # You can jump directly to building your functions, and collecting HTML inputs for processing.
